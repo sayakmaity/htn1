@@ -10,15 +10,22 @@
 
 <body>
     <div id="container">
-        <form>
-            <p><input type="text" class="box" value="" id="first" placeholder="Enter First Name" /></p>
-            <p><input type="text" class="box" value="" id="last" placeholder="Enter Last Name" /></p>
-            <p><input type="text" class="box" value="" id="healthCard" placeholder="Enter Health Card Number" /></p>
-            <p><input type="text" class="box" value="" id="postal" placeholder="Enter Postal Code" /></p>
-            <p style="text-align:left"><input type="next" id="button" /></p>
-        </form>
-    </div>
-    <script type="text/javascript" src="script.js"></script>
+        <div id="info">
+            <p id="welcome">Welcome</p>
+            <p>Please fill out the following information to be cued in the ER wait room.</p>
+
+            <p>First Name (As displayed on your Health card)</p>
+            <p><input type="text" class="box" value="" id="first"/></p>
+            <p>Last Name (As displayed on your Health card)</p>
+            <p><input type="text" class="box" value="" id="last"/></p>
+            <p>Health Card Number (10 digit)</p>
+            <p><input type="text" class="box" value="" id="healthCard"/></p>
+            <p>Postal Code (Of your current location)</p>
+            <p><input type="text" class="box" value="" id="postal"/></p>
+            <p style="text-align:left"><input type="submit" onclick="nextPage()" value="Next" id="next" /></p>
+
+        </div>
+        <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

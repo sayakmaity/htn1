@@ -1,25 +1,24 @@
-const { Client } = require('pg')
+// const { Client } = require('pg')
 
-const client = new Client(process.env.DATABASE_URL)
+// const client = new Client(process.env.DATABASE_URL)
 
-client.connect()
+// client.connect()
 
+var first;
+var last;
+var healthCard;
+var postal;
 
-
-
-// javascript login system
-function login() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    if (username == "admin" && password == "admin") {
-        alert ("Login successfully");
-        window.location = "success.html"; // Redirecting to other page.
-        return false;
-    }
-    else {
-        alert("Wrong username or password");
-    }
+function nextPage() {
+    first = document.getElementById('first').value;
+    last = document.getElementById('last').value;
+    healthCard = document.getElementById('healthCard').value;
+    postal = document.getElementById('postal').value;
+    // console.log(first)
+    // FIND WAY to navigate to next page...
 }
+
+
 
 // take name as javascript input and add it to cockroachdb
 function addName() {
@@ -37,29 +36,25 @@ function addName() {
 
 
 
-
-
-
-
-var username = document.getElementById("username");
-var pass = document.getElementById("pass");
-pass.onfocus = function () {
-    if (pass.value == "ENTER PASSWORD") {
-        pass.value = "";
-    }
-};
-username.onfocus = function () {
-    if (this.value == "ENTER USERNAME") {
-        this.value = "";
-    }
-};
-pass.onblur = function () {
-    if (this.value == "") {
-        pass.value = "ENTER PASSWORD";
-    }
-};
-username.onblur = function () {
-    if (this.value == "") {
-        this.value = "ENTER USERNAME";
-    }
-};
+// var username = document.getElementById("username");
+// var pass = document.getElementById("pass");
+// pass.onfocus = function () {
+//     if (pass.value == "ENTER PASSWORD") {
+//         pass.value = "";
+//     }
+// };
+// username.onfocus = function () {
+//     if (this.value == "ENTER USERNAME") {
+//         this.value = "";
+//     }
+// };
+// pass.onblur = function () {
+//     if (this.value == "") {
+//         pass.value = "ENTER PASSWORD";
+//     }
+// };
+// username.onblur = function () {
+//     if (this.value == "") {
+//         this.value = "ENTER USERNAME";
+//     }
+// };

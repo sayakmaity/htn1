@@ -1,3 +1,37 @@
-#welcome{
+#welcome {
     color: blue;
+}
+
+#container {
+    background: #E5E5E5;
+}
+
+p {
+    position: absolute;
+    width: 406px;
+    height: 30px;
+    left: 520px;
+    top: 288px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+    color: #1F2937;
+
+}
+
+#info {
+    /* Form Background */
+
+    position: absolute;
+    width: 733px;
+    height: 640px;
+    left: 365px;
+    top: 128px;
+
+    background: #FFFFFF;
+    border-radius: 9px;
 }

@@ -7,21 +7,61 @@
 }
 
 p {
-    position: absolute;
-    width: 406px;
-    height: 30px;
-    left: 520px;
-    top: 288px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 150%;
-    /* identical to box height, or 30px */
-
     color: #1F2937;
-
 }
+
+.box {
+    box-sizing: border-box;
+    width: 425px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+#next {
+    /* Rectangle 5 */
+    width: 344px;
+    height: 40px;
+    /* left: 548px;
+    top: 682px; */
+    background: #1857B6;
+    border-radius: 10px;
+}
+
+#rectangle {
+    box-sizing: border-box;
+    position: absolute;
+    width: 425px;
+    height: 32px;
+    left: 519px;
+    top: 320px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
+
+/* Figma CSS funky, not planning on using it */
+/* #firsttext {
+    position: absolute;
+    width: 406px;
+    height: 30px;
+    left: 520px;
+    top: 288px;
+}
+
+#lasttext {
+    position: absolute;
+    width: 405px;
+    height: 30px;
+    left: 521px;
+    top: 366px;
+} */
 
 #info {
     /* Form Background */
@@ -31,7 +71,6 @@ p {
     height: 640px;
     left: 365px;
     top: 128px;
-
     background: #FFFFFF;
     border-radius: 9px;
 }

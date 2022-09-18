@@ -1,10 +1,14 @@
 #welcome {
     color: blue;
+    /* align-items: center;
+    text-align: center; */
 }
 
 #container {
     background: #E5E5E5;
 }
+
+
 
 p {
     font-family: 'Nunito';
@@ -32,6 +36,8 @@ p {
     top: 682px; */
     background: #1857B6;
     border-radius: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 #rectangle {
